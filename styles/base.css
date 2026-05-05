@@ -1,0 +1,227 @@
+/* =========================================================================
+   Import Google Fonts
+   Using 'Montserrat' for headings and 'Roboto' for body text.
+   ========================================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* =========================================================================
+   CSS Variables (Color Schema and Typography)
+   Practicing good design principles for color contrast and repetition.
+   ========================================================================= */
+:root {
+    --primary-color: #003366;    /* Dark Blue */
+    --secondary-color: #f4f4f4;  /* Light Gray background */
+    --accent-color: #d2b55b;     /* Gold/Mustard */
+    --text-color: #333333;       /* Dark Gray for readable text */
+    --nav-bg: #002244;           /* Darker Blue for nav background */
+    
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/* =========================================================================
+   Global Resets
+   ========================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+/* =========================================================================
+   Header & Navigation
+   ========================================================================= */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+/* Span tag set to block to center easily */
+header span#course-title {
+    display: block;
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* CSS Flexbox Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    background-color: var(--nav-bg);
+    padding: 0.5rem;
+    gap: 1rem; /* Space between links */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Well-designed hover effect */
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+/* =========================================================================
+   Main Content Layout (CSS Grid & Centering)
+   ========================================================================= */
+@media (min-width: 768px) {
+    main {grid-template-columns: 3fr fr;
+        /* Limited width and centered horizontally */
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 1rem;
+       
+    /* Layout cards using CSS Grid */
+    display: grid;
+    gap: 1rem; /* Spacing between grid items */
+}
+
+/* Make the h1 span across all columns in the grid */
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Responsive Grid for larger screens (Cards side-by-side) */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr; /* 2 columns on larger screens */
+    }
+}
+
+/* =========================================================================
+   Card Styles
+   ========================================================================= */
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8p;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth */
+    overflow: hidden; /* Keeps the heading inside the rounded corners */
+    text-align: left;
+    padding-bottom: 1.5rem;
+}
+
+.card p{
+    padding: 0 1.5rem;
+    text-align: match-parent;
+    line-height: 1.6;
+}
+
+.card p img {
+    width: 120px;
+    height: auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.card ul {
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+    align-content: flex-end;
+}
+
+.card::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.card img {
+    display: flex;
+    max-width: 120px;
+    height: auto;
+    border-radius: 4px;
+    float: right;
+}
+
+    .location-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.location-section hr {
+    width: 80%;
+    margin: 10px auto;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.flag-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0 1.5rem;
+}
+
+.flag-container img {
+    width: 120px;
+    height: auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* List styling for the right card */
+.card ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* =========================================================================
+   Footer
+   ========================================================================= */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer #lastModified {
+    color: var(--accent-color);
+    font-weight: 700;
+}
