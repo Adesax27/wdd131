@@ -51,7 +51,8 @@ header {
 
 /* Span tag set to block to center easily */
 header span#course-title {
-    display: block;
+    display: flex;
+    justify-content: center;
     font-family: var(--heading-font);
     font-size: 1.8rem;
     font-weight: 700;
@@ -61,7 +62,7 @@ header span#course-title {
 /* CSS Flexbox Navigation */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     background-color: var(--nav-bg);
@@ -87,8 +88,7 @@ nav a:hover {
 /* =========================================================================
    Main Content Layout (CSS Grid & Centering)
    ========================================================================= */
-@media (min-width: 768px) {
-    main {grid-template-columns: 3fr fr;
+    main {grid-template-columns: auto 1fr auto / auto 1fr auto;
         /* Limited width and centered horizontally */
         max-width: 1000px;
         margin: 2rem auto;
@@ -98,6 +98,8 @@ nav a:hover {
     display: grid;
     gap: 1rem; /* Spacing between grid items */
 }
+
+
 
 /* Make the h1 span across all columns in the grid */
 main h1 {
@@ -111,7 +113,7 @@ main h1 {
 /* Responsive Grid for larger screens (Cards side-by-side) */
 @media (min-width: 768px) {
     main {
-        grid-template-columns: 1fr 1fr; /* 2 columns on larger screens */
+        grid-template-columns: 4fr 2fr; /* 2 columns on larger screens */
     }
 }
 
@@ -121,7 +123,7 @@ main h1 {
 .card {
     background-color: white;
     border: 1px solid #ccc;
-    border-radius: 8p;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds depth */
     overflow: hidden; /* Keeps the heading inside the rounded corners */
     text-align: left;
@@ -130,7 +132,7 @@ main h1 {
 
 .card p{
     padding: 0 1.5rem;
-    text-align: match-parent;
+    text-align: left;
     line-height: 1.6;
 }
 
@@ -138,13 +140,13 @@ main h1 {
     width: 120px;
     height: auto;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    text-align: left;
 }
 
 .card ul {
     padding: 0 1.5rem;
     margin-bottom: 1rem;
-    align-content: flex-end;
+    text-align: left;
+    margin-top: 1rem;
 }
 
 .card::after {

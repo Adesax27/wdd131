@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+    maincard {grid-template-columns: auto 1fr auto;
+        /* Limited width and centered horizontally */
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+    /* Layout cards using CSS Grid */
+    display: grid;
+    gap: 1rem; /* Spacing between grid items */
+}
