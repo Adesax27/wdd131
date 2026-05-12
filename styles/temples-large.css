@@ -1,0 +1,19 @@
+/* Remove hamburger on desktop */
+#menu {
+    display: flex !important; /* Force display on desktop */
+    justify-content: right;
+}
+
+.navigation {
+    display: flex !important; /* Force flex on desktop */
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grid-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 Columns on desktop */
+}
+
+main {
+    max-width: 1000px; /* Expand centered container */
+}
