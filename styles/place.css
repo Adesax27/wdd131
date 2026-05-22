@@ -1,0 +1,166 @@
+/* Base Styles & Variables */
+:root {
+    --madagascar-red: #CE1126;
+    --madagascar-green: #007E3A;
+    --text-dark: #333333;
+    --bg-light: #f4fdf4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.main-header {
+    background-color: var(--madagascar-red);
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.main-header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.green-stripe {
+    height: 6px;
+    background-color: var(--madagascar-green);
+}
+
+/* Main Content - Mobile Default */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.info-panels {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.panel {
+    text-align: center;
+}
+
+.panel-header {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: black;
+}
+
+ul.data-list {
+    list-style: none;
+    line-height: 1.8;
+}
+
+ul.data-list li {
+    font-size: 0.95rem;
+}
+
+.weather-info p {
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--madagascar-red);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-top: auto;
+}
+
+/* Desktop / Landscape View */
+@media (min-width: 768px) {
+    .content-wrapper {
+        position: relative;
+        display: block;
+    }
+
+    .hero-image {
+        height: 60vh;
+        max-height: none;
+    }
+
+    .info-panels {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        display: block;
+    }
+
+    .panel {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+        backdrop-filter: blur(5px);
+        border-radius: 4px;
+        text-align: left;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        overflow: hidden;
+    }
+
+    .panel-header {
+        background-color: var(--madagascar-green);
+        color: white;
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+    }
+
+    .data-panel {
+        top: 15%;
+        left: 5%;
+        width: 300px;
+    }
+
+    ul.data-list {
+        padding: 0 15px 15px 15px;
+    }
+
+    ul.data-list li {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 10px;
+    }
+
+    .weather-panel {
+        bottom: 10%;
+        right: 5%;
+        width: 250px;
+    }
+
+    .weather-info {
+        padding: 0 15px 15px 15px;
+    }
+}
