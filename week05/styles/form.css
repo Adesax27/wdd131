@@ -179,3 +179,21 @@ footer p {
     font-size: 0.85rem;
     margin: 3px 0;
 }
+
+/* Responsive Desktop Grid Layout */
+@media (min-width: 600px) {
+    body {
+        padding: 40px 20px;
+    }
+
+    header, footer, main {
+        max-width: 550px; /* Widens the workspace smoothly on desktop */
+    }
+
+    /* Change checkboxes to display as a side-by-side grid on desktop */
+    .checkbox-fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
