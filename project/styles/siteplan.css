@@ -1,0 +1,158 @@
+/* Apply the color scheme from your site plan */
+:root {
+    --primary-color: #2E7D32;
+    --secondary-color: #8D6E63;
+    --background-color: #F8F9FA;
+    --text-color: #212121;
+    --alert-color: #FFCDD2; /* Soft red for alerts */
+    --alert-border: #D32F2F; /* Dark red for alert borders */
+    --normal-color: #E8F5E9; /* Soft green for normal status */
+    --normal-border: #4CAF50;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover, nav a.active {
+    text-decoration: underline;
+}
+
+/* Main Layout */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Form Styling */
+.settings-panel {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #1B5E20;
+}
+
+/* JavaScript Injected Cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.sensor-card {
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Classes dynamically applied by JS */
+.sensor-card.normal {
+    background-color: var(--normal-color);
+    border-left-color: var(--normal-border);
+}
+
+.sensor-card.alert {
+    background-color: var(--alert-color);
+    border-left-color: var(--alert-border);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Responsive Desktop Layout */
+@media (min-width: 768px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr 2fr; /* Settings on left, Cards on right */
+    }
+}
