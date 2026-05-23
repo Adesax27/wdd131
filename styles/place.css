@@ -29,10 +29,13 @@ body {
     padding-top: 15px;
 }
 
-.main-header h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    padding-bottom: 15px;
+.main-header h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ffffff;
+    margin: 10px auto 0 auto;
 }
 
 .green-stripe {
@@ -106,9 +109,10 @@ ul.data-list li {
     }
 
     .hero-image {
-        height: 60vh;
-        max-height: none;
-    }
+    width: 100%;       /* Makes it fill the container */
+    height: auto;      /* Keeps the aspect ratio correct */
+    display: block;    /* Removes extra whitespace below the image */
+}
 
     .info-panels {
         position: absolute;
