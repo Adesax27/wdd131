@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple</title>
+    <title>London Zoo</title>
+    <meta name="description" content="A detailed overview of London Zoo, London, United Kingdom, including data and weather information.">
+    <meta name="author" content="ADEMOLA OKUNJOYO">
     <link rel="stylesheet" href="styles/place.css">
 </head>
 <body>
     <header class="main-header">
-        <h1>Temple</h1>
+        <h1>London Zoo</h1>
         <div class="green-stripe"></div>
     </header>
 
     <main class="content-wrapper">
-        <img src="images/king julius.jpg" alt="Temple of Great Britain" class="hero-image">
+        <picture>
+    <source media="(min-width: 1500px)" srcset="images/london-ZOO-DESKTOP.webp" type="images/webp">
+    <source media="(min-height: 750px)" srcset="images/london-ZOO-DESKTOP.jpg" type="images/jpeg">
+
+    <source srcset="images/london-ZOO-MOBILE.webp" type="images/webp">
+    <img src="images/london-ZOO-MOBILE.jpg" alt="London Zoo" class="hero-image">
+</picture>
         <div class="info-panels">
             <section class="panel data-panel">
                 <h2 class="panel-header">Data</h2>
                 <ul class="data-list">
-                    <li><strong>Area:</strong> 587,041 sq km</li>
-                    <li><strong>Population:</strong> 27,691,018</li>
+                    <li><strong>Area:</strong> 243,610 sq km</li>
+                    <li><strong>Population:</strong> 67,000,000</li>
                     <li><strong>Capital:</strong> London</li>
-                    <li><strong>Languages:</strong> British English, English</li>
-                    <li><strong>Currency:</strong> British Pound</li>
+                    <li><strong>Languages:</strong> English</li>
+                    <li><strong>Currency:</strong> British Pound (£)</li>
                     <li><strong>Time Zone:</strong> UTC+0</li>
                     <li><strong>Calling Code:</strong> +44</li>
                     <li><strong>Internet TLD:</strong> .uk</li>
@@ -30,9 +38,15 @@
             </section>
 
             <section class="panel weather-panel">
-                <h2 class="panel-header">Weather ⛅</h2>
+                <h2 class="panel-header" style="display: flex; align-items: center; gap: 8px; justify-content: center;">
+                    Weather 
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 17.5C4.567 17.5 3 15.933 3 14C3 12.067 4.567 10.5 6.5 10.5C6.67157 10.5 6.84033 10.5122 7.00551 10.5358C7.57554 7.92131 9.87321 6 12.5 6C15.5376 6 18 8.46243 18 11.5C18 11.634 17.9952 11.7668 17.9858 11.8983C19.6869 12.2854 21 13.7951 21 15.5C21 17.433 19.433 19 17.5 19H6.5V17.5Z" fill="#FFC107" stroke="#333" stroke-width="1.5"/>
+                        <path d="M17.5 19H6.5C4.567 19 3 17.433 3 15.5C3 13.567 4.567 12 6.5 12C6.67157 12 6.84033 12.0122 7.00551 12.0358C7.57554 9.42131 9.87321 7.5 12.5 7.5C15.5376 7.5 18 9.96243 18 13C18 13.134 17.9952 13.2668 17.9858 13.3983C19.6869 13.7854 21 15.2951 21 17C21 18.933 19.433 20.5 17.5 20.5" fill="white" stroke="#333" stroke-width="1.5"/>
+                    </svg>
+                </h2>
                 <div class="weather-info">
-                    <p><strong>Temperature:</strong> -10°C</p>
+                    <p><strong>Temperature:</strong> 12°C</p>
                     <p><strong>Conditions:</strong> Partly Cloudy</p>
                     <p><strong>Wind:</strong> 5 km/h</p>
                     <p><strong>Wind Chill:</strong> 9.8 °C</p>
@@ -43,7 +57,7 @@
 
     <footer class="main-footer">
         <p>© 2024 🌸 Ademola Samuel Okunjoyo 🌸</p>
-        <p>Temple, Britain</p>
+        <p>London Zoo, London, United Kingdom</p>
         <p id="last-mod">Last Modification: 02/08/2024 22:47:47</p>
     </footer>
 
