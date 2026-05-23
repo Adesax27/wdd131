@@ -1,0 +1,172 @@
+/* Color properties targeting layout elements matching graphic specifications */
+:root {
+    --brand-dark-plum: #310B31;
+    --form-bg-lavender: #D1CCD6;
+    --text-charcoal: #111111;
+    --white: #ffffff;
+    --btn-gray: #EAEAEA;
+    --btn-border: #8F8F8F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--text-charcoal);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, footer {
+    width: 100%;
+    max-width: 420px;
+    background-color: var(--brand-dark-plum);
+    color: var(--white);
+    text-align: center;
+    padding: 15px 10px;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+main {
+    width: 100%;
+    max-width: 420px;
+}
+
+form {
+    background-color: var(--form-bg-lavender);
+    padding: 20px 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border-left: 1px solid #b5afba;
+    border-right: 1px solid #b5afba;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.instructions, .optional {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+.optional {
+    color: #3333E0;
+    font-style: normal;
+}
+
+/* Control Element Restructuring rules */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #A6A6A6;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background-color: var(--white);
+}
+
+/* Precise Horizontal Radio Star Matrix Layer formatting rules */
+.stars-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    margin-top: 2px;
+}
+
+.star-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 0.9rem;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.star-item input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Formatting Rules for the Checkboxes Stack */
+.checkbox-fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.checkbox-fieldset legend {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.check-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.check-label input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+/* Form Action Trigger Element styling matching screenshot */
+.submit-action-btn {
+    background-color: var(--btn-gray);
+    color: var(--text-charcoal);
+    border: 1px solid var(--btn-border);
+    padding: 10px;
+    font-size: 1.4rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.submit-action-btn:hover {
+    background-color: #dfdfdf;
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin: 3px 0;
+}
