@@ -164,3 +164,20 @@ ul.data-list li {
         padding: 0 15px 15px 15px;
     }
 }
+
+/* Decorative line after the header */
+.main-header h1::after {
+    content: ""; /* Required property */
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    margin: 10px auto 0 auto; /* Centers the line under the H1 */
+}
+
+/* Or, if you need a clearfix for the content wrapper */
+.content-wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
