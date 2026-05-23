@@ -1,0 +1,54 @@
+/* Update selectors to target the <figure> element created in JS */
+h2{
+    justify-content: center;
+    text-align: center;
+}
+
+figure {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+figure h3 {
+    text-align: center;
+    background-color: #002147;
+    color: white;
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+figure img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+figcaption p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+figcaption p span {
+    font-weight: bold;
+    color: #002147;
+}
+
+/* Ensure the grid container is set up correctly */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - Responsive Gallery</title>
+    <meta name="description" content="Explore a beautiful gallery of temples from around the world, featuring diverse architectural styles.">
+    <meta name="author" content="Ademola Samuel Okunjoyo">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/filtered-temple.css">
+    <link rel="stylesheet" href="styles/filtered-temple-large.css" media="(min-width: 768px)">
+    
+    <script src="scripts/filtered-temple.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" title="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" data-filter="Home">Home</a></li>
+                <li><a href="#" data-filter="Old">Old</a></li>
+                <li><a href="#" data-filter="New">New</a></li>
+                <li><a href="#" data-filter="Large">Large</a></li>
+                <li><a href="#" data-filter="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="gallery-title">Home</h2>
+        
+        <div class="grid-container" id="temple-gallery">
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Ademola Samuel Okunjoyo | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
