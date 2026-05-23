@@ -108,9 +108,14 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4px;
+}
+
+/* Ensure the stars text label matches standard weight */
+.star-item label {
     font-weight: 400;
     font-size: 0.9rem;
-    gap: 4px;
+    margin-bottom: 0;
     cursor: pointer;
 }
 
@@ -133,15 +138,19 @@ textarea {
     margin-bottom: 5px;
 }
 
-.check-label {
+.check-group {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.check-group label {
     font-weight: 400;
+    margin-bottom: 0;
     cursor: pointer;
 }
 
-.check-label input[type="checkbox"] {
+.check-group input[type="checkbox"] {
     width: 22px;
     height: 22px;
     cursor: pointer;
