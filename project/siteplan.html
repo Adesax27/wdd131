@@ -1,72 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgriSense Dashboard - Home</title>
-    <meta name="description" content="Dashboard for monitoring hybrid onion storage facility environmental data.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>AgriSense Website Plan</title>
+    <meta name="description" content="Website planning document for AgriSense dashboard project">
     <meta name="author" content="Ademola Samuel Okunjoyo">
-    
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS and JS -->
-    <link rel="stylesheet" href="styles/siteplan.css">
-    <script src="scripts/siteplan.js" defer></script>
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
 
-    <header>
-        <div class="header-content">
-            <h1>AgriSense Storage</h1>
-            <nav>
-                <ul>
-                    <!-- The project requires at least 3 pages with consistent navigation -->
-                    <li><a href="index.html" class="active">Dashboard</a></li>
-                    <li><a href="about.html">About Facility</a></li>
-                    <li><a href="contact.html">Contact Support</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
-    <main>
-        <!-- Hero Section with Lazy Loading (Course Requirement) -->
-        <section class="hero">
-            <img src="images/storage-facility.jpg" alt="Hybrid Onion Storage Facility" loading="lazy" width="800" height="400">
-            <h2>Facility Monitoring Dashboard</h2>
-        </section>
+        header {
+            background-color: #2f855a;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-family: "Roboto Slab", serif;
+        }
 
-        <div class="dashboard-layout">
-            <!-- Settings Form for localStorage -->
-            <section class="settings-panel">
-                <h3>Environmental Controls</h3>
-                <p>Set the maximum safe temperature for the storage unit. Alerts will trigger if sensors exceed this value.</p>
-                
-                <form id="settingsForm">
-                    <label for="maxTemp">Max Safe Temperature (°C):</label>
-                    <input type="number" id="maxTemp" name="maxTemp" min="0" max="50" required>
-                    <button type="submit">Update Threshold</button>
-                </form>
-            </section>
+        section {
+            padding: 1rem 2rem;
+            margin: 1rem;
+            background: white;
+            border-radius: 8px;
+        }
 
-            <!-- Dashboard Container for JavaScript Injection -->
-            <section class="data-panel">
-                <h3>Recent Sensor Readings</h3>
-                <div id="dashboardContainer" class="card-grid">
-                    <!-- JS will inject the .sensor-card divs here -->
-                </div>
-            </section>
-        </div>
-    </main>
+        h2 {
+            color: #2f855a;
+            font-family: "Roboto Slab", serif;
+        }
 
-    <footer>
-        <p>&copy; 2026 Ademola Samuel Okunjoyo | WDD 131 Final Project</p>
-        <!-- The project requires a link to a references page in the footer -->
-        <p><a href="references.html">Site References</a></p>
-    </footer>
+        .wireframe {
+            border: 2px dashed #999;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
 
-</body>
-</html>
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #2f855a;
+            color: white;
+        }
