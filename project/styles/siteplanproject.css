@@ -1,0 +1,77 @@
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>AgriSense Website Plan</h1>
+    </header>
+
+    <!-- Site Name -->
+    <section>
+        <h2>Site Name</h2>
+        <p><strong>AgriSense Storage Dashboard</strong></p>
+        <p>This name reflects a smart agricultural monitoring system (AgriSense) designed to track environmental conditions in onion storage facilities.</p>
+    </section>
+
+    <!-- Site Purpose -->
+    <section>
+        <h2>Site Purpose</h2>
+        <p>The website provides a dashboard system for monitoring environmental conditions such as temperature in agricultural storage facilities. It allows users to view sensor data, adjust safety thresholds, and ensure optimal storage conditions.</p>
+    </section>
+
+    <!-- Scenarios -->
+    <section>
+        <h2>Scenarios</h2>
+        <ul>
+            <li>What is the current temperature inside the storage facility?</li>
+            <li>How can I set a safe temperature limit to avoid spoilage?</li>
+        </ul>
+    </section>
+
+    <!-- Color Scheme -->
+    <section>
+        <h2>Color Scheme</h2>
+        <ul>
+            <li><strong>Green (#2f855a):</strong> Used for headers, navigation, and highlights (represents agriculture and safety).</li>
+            <li><strong>Light Gray (#f4f7f6):</strong> Used for background color for a clean and modern look.</li>
+        </ul>
+    </section>
+
+    <!-- Typography -->
+    <section>
+        <h2>Typography</h2>
+        <ul>
+            <li><strong>Roboto Slab:</strong> Used for headings.</li>
+            <li><strong>Open Sans:</strong> Used for body text for readability.</li>
+        </ul>
+    </section>
+
+    <!-- Wireframes -->
+    <section>
+        <h2>Wireframes</h2>
+
+        <h3>Mobile View</h3>
+        <div class="wireframe">
+            <p>[Header]</p>
+            <p>[Hero Image]</p>
+            <p>[Settings Panel]</p>
+            <p>[Sensor Data Cards]</p>
+            <p>[Footer]</p>
+        </div>
+
+        <h3>Desktop View</h3>
+        <div class="wireframe">
+            <p>[Header + Navigation]</p>
+            <p>[Hero Section]</p>
+            <p>[Settings Panel | Sensor Data Panel]</p>
+            <p>[Footer]</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ademola Samuel Okunjoyo | WDD 131</p>
+    </footer>
+
+</body>
+</html>
