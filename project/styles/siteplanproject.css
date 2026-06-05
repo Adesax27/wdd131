@@ -1,77 +1,70 @@
-    </style>
-</head>
+/* =========================
+   Base Styling
+========================= */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
-<body>
+/* =========================
+   Header
+========================= */
+header {
+    background-color: #2f855a;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+}
 
-    <header>
-        <h1>AgriSense Website Plan</h1>
-    </header>
+/* =========================
+   Sections
+========================= */
+section {
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
 
-    <!-- Site Name -->
-    <section>
-        <h2>Site Name</h2>
-        <p><strong>AgriSense Storage Dashboard</strong></p>
-        <p>This name reflects a smart agricultural monitoring system (AgriSense) designed to track environmental conditions in onion storage facilities.</p>
-    </section>
+/* =========================
+   Headings
+========================= */
+h1, h2, h3 {
+    font-family: "Roboto Slab", serif;
+}
 
-    <!-- Site Purpose -->
-    <section>
-        <h2>Site Purpose</h2>
-        <p>The website provides a dashboard system for monitoring environmental conditions such as temperature in agricultural storage facilities. It allows users to view sensor data, adjust safety thresholds, and ensure optimal storage conditions.</p>
-    </section>
+h2 {
+    color: #2f855a;
+}
 
-    <!-- Scenarios -->
-    <section>
-        <h2>Scenarios</h2>
-        <ul>
-            <li>What is the current temperature inside the storage facility?</li>
-            <li>How can I set a safe temperature limit to avoid spoilage?</li>
-        </ul>
-    </section>
+/* =========================
+   Lists
+========================= */
+ul {
+    padding-left: 20px;
+}
 
-    <!-- Color Scheme -->
-    <section>
-        <h2>Color Scheme</h2>
-        <ul>
-            <li><strong>Green (#2f855a):</strong> Used for headers, navigation, and highlights (represents agriculture and safety).</li>
-            <li><strong>Light Gray (#f4f7f6):</strong> Used for background color for a clean and modern look.</li>
-        </ul>
-    </section>
+/* =========================
+   Wireframe Boxes
+========================= */
+.wireframe {
+    border: 2px dashed #999;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #fafafa;
+}
 
-    <!-- Typography -->
-    <section>
-        <h2>Typography</h2>
-        <ul>
-            <li><strong>Roboto Slab:</strong> Used for headings.</li>
-            <li><strong>Open Sans:</strong> Used for body text for readability.</li>
-        </ul>
-    </section>
-
-    <!-- Wireframes -->
-    <section>
-        <h2>Wireframes</h2>
-
-        <h3>Mobile View</h3>
-        <div class="wireframe">
-            <p>[Header]</p>
-            <p>[Hero Image]</p>
-            <p>[Settings Panel]</p>
-            <p>[Sensor Data Cards]</p>
-            <p>[Footer]</p>
-        </div>
-
-        <h3>Desktop View</h3>
-        <div class="wireframe">
-            <p>[Header + Navigation]</p>
-            <p>[Hero Section]</p>
-            <p>[Settings Panel | Sensor Data Panel]</p>
-            <p>[Footer]</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Ademola Samuel Okunjoyo | WDD 131</p>
-    </footer>
-
-</body>
-</html>
+/* =========================
+   Footer
+========================= */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2f855a;
+    color: white;
+}
+``
