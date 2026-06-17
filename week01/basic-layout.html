@@ -3,30 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header Content</title>
-</head>
-<body>
-    <header>
-        <span id="header-title">Header Content</span>
-        <nav>
-            <a href="https://www.Home.com" target="_blank">Home</a>
-            <a href="https://www.Projects.com" target="_blank">Projects</a>
-            <a href="https://www.Services.com" target="_blank">Services</a>
-            <a href="https://www.ContactUs.com" target="_blank">Contact Us</a>
-            <link rel="stylesheet" href="styles/layout.css">
-        </nav>
-    </header>
-    <main>
-        <section main="maincard">
-            <h2>Main Content</h2>
-        </section>
+    <title>AgriSense Website Plan</title>
+    <meta name="description" content="Website planning document for AgriSense dashboard project">
+    <meta name="author" content="Ademola Samuel Okunjoyo">
 
-        <section aside="asidecard">
-            <h2>Aside Content</h2>
-        </section>
-    </main>
+    <!-- Google Fonts -->
+    https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap
+
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2f855a;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-family: "Roboto Slab", serif;
+        }
+
+        section {
+            padding: 1rem 2rem;
+            margin: 1rem;
+            background: white;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #2f855a;
+            font-family: "Roboto Slab", serif;
+        }
+
+        .wireframe {
+            border: 2px dashed #999;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #2f855a;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>AgriSense Website Plan</h1>
+    </header>
+
+    <!-- Site Name -->
+    <section>
+        <h2>Site Name</h2>
+        <p><strong>AgriSense Storage Dashboard</strong></p>
+        <p>This name reflects a smart agricultural monitoring system (AgriSense) designed to track environmental conditions in onion storage facilities.</p>
+    </section>
+
+    <!-- Site Purpose -->
+    <section>
+        <h2>Site Purpose</h2>
+        <p>The website provides a dashboard system for monitoring environmental conditions such as temperature in agricultural storage facilities. It allows users to view sensor data, adjust safety thresholds, and ensure optimal storage conditions.</p>
+    </section>
+
+    <!-- Scenarios -->
+    <section>
+        <h2>Scenarios</h2>
+        <ul>
+            <li>What is the current temperature inside the storage facility?</li>
+            <li>How can I set a safe temperature limit to avoid spoilage?</li>
+        </ul>
+    </section>
+
+    <!-- Color Scheme -->
+    <section>
+        <h2>Color Scheme</h2>
+        <ul>
+            <li><strong>Green (#2f855a):</strong> Used for headers, navigation, and highlights (represents agriculture and safety).</li>
+            <li><strong>Light Gray (#f4f7f6):</strong> Used for background color for a clean and modern look.</li>
+        </ul>
+    </section>
+
+    <!-- Typography -->
+    <section>
+        <h2>Typography</h2>
+        <ul>
+            <li><strong>Roboto Slab:</strong> Used for headings.</li>
+            <li><strong>Open Sans:</strong> Used for body text for readability.</li>
+        </ul>
+    </section>
+
+    <!-- Wireframes -->
+    <section>
+        <h2>Wireframes</h2>
+
+        <h3>Mobile View</h3>
+        <div class="wireframe">
+            <p>[Header]</p>
+            <p>[Hero Image]</p>
+            <p>[Settings Panel]</p>
+            <p>[Sensor Data Cards]</p>
+            <p>[Footer]</p>
+        </div>
+
+        <h3>Desktop View</h3>
+        <div class="wireframe">
+            <p>[Header + Navigation]</p>
+            <p>[Hero Section]</p>
+            <p>[Settings Panel | Sensor Data Panel]</p>
+            <p>[Footer]</p>
+        </div>
+    </section>
+
     <footer>
-        <p>Footer Content</p>
+        <p>&copy; 2026 Ademola Samuel Okunjoyo | WDD 131</p>
     </footer>
+
 </body>
 </html>
